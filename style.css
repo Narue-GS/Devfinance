@@ -18,12 +18,15 @@ body{
     font-family: 'poppis', sans-serif
 } 
 .container{
-    width: 100vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     gap: 2em;
     align-items: center;
 }
+
+
+
 h2 {
     margin-bottom: 0.8rem;
     color:var(--color-black);
@@ -57,13 +60,13 @@ header{background: #2d4a22;
     
 }
 #Balance {
-    width: min(90%, 1000px);    
+    width: min(90%, 1000px);   
 }
 
 #quadrants {
     display: flex;
     justify-content: space-between;
-    width: min(90%, 1000px);  
+    width: 90%;  
     gap: 1em;
 }
 
@@ -128,4 +131,14 @@ footer{
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
+}
+
+
+@media (max-width:1000px) {
+    .container {
+        width: 100vw;
+    }
+    #quadrants {
+        flex-direction: column;
+    }
 }
